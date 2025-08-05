@@ -2535,11 +2535,18 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background-color: var(--background-color); /* Usar el beige claro para el fondo de contacto */
+  background-color: #A67B5B; /* Usar el beige claro para el fondo de contacto */
 }
 
 .contact .container {
   max-width: 1200px;
+}
+.contact .section-title h2 {
+  color: #ffffff;
+}
+
+.contact .section-title p{
+  color: #ffffff;
 }
 
 .contact .contact-main-wrapper {
@@ -2578,9 +2585,10 @@ section,
 }
 
 .contact .contact-cards-container {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr;
   gap: 15px;
+  justify-items: center;
 }
 
 @media (min-width: 576px) {
@@ -2598,6 +2606,7 @@ section,
   gap: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .contact .contact-card:hover {
